@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divisi MAPALA UNIMOR</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 100px;
+      background-color: #f7f7f7;
+    }
+
+    .judul {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid-item {
+      background-color: #fff;
+      border: 2px solid #00704a;
+      border-radius: 10px;
+      padding-top: 8px;
+      text-align: center;
+      color: #00704a;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: 0.3s ease;
+      height: 180px;
+      width: 240px;
+      margin-right: 5px;
+    }
+
+    .grid-item:hover {
+      background-color: #00704a;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    img{
+        height: 160px;
+        width: 220px;
+        border-radius: 10px;
+    }
+
+    .content-section{
+      margin: 50px;
+    }
+
+    .header{
+      position: fixed;
+      width: 100%;
+    }
+
+    .gambar-logo{
+      height: 100px;
+      width: 90px;
+    }
+  </style>
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+      <img class="gambar-logo" src="img/Logo_Berwarna.png" alt="Logo MAPALA UNIMOR">
+      <span><strong>MPA TIGERS</strong></span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Profil <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <!-- <li><a href="sejarah.html">Sejarah</a></li> -->
+            <li><a href="visi-misi.html">Visi & Misi</a></li>
+            <li><a href="kepengurusan.html">Kepengurusan</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Kegiatan <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="diklatsar.html">Diklatsar</a></li>
+            <li><a href="dikjut.html">Dikjut</a></li>
+            <li><a href="mpn.html">MPN</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Publikasi <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="album.html">Album</a></li>
+            <li><a href="majalah.html">Majalah</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+          </ul>
+        </li>
+        <li><a href="beranda.html" class="login-button">Beranda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="judul">ALBUM MPA TIGERS</h1>
+  <br>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="img/gambar_1.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_2.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_3.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_4.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_5.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_6.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_7.jpg"><br>
+    </div>
+    <div class="grid-item">
+      <img src="img/gambar_8.jpg"><br>
+    </div>
+    <!-- <div class="grid-item"><img src="img/fb.jpg"><br>
+        Divisi Caving
+    </div>
+    <div class="grid-item"><img src="img/fb.jpg"><br>
+        Divisi Konservasi
+    </div>
+    <div class="grid-item"><img src="img/fb.jpg"><br>
+        Divisi Arung Jeram
+    </div>
+    <div class="grid-item"><img src="img/fb.jpg"><br>
+        Divisi SAR
+    </div> -->
+    <!-- <div class="grid-item">Divisi Caving</div>
+    <div class="grid-item">Divisi Konservasi</div>
+    <div class="grid-item">Divisi Arung Jeram</div>
+    <div class="grid-item">Divisi SAR</div> -->
+  </div>
+
+</body>
+</html>

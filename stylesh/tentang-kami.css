@@ -1,0 +1,113 @@
+/* header */
+header {
+    background-color: #006400;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #212529;
+} */
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Grid Row */
+.row {
+    display: flex;
+    border:  purple solid 1px;
+}
+
+.column-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: green solid 1px;
+}
+
+/* Heading dan Paragraf */
+.column-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: black solid 1px;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+.penjelasan-oragnisasi{
+    text-align: center;
+}
+
+
+.arti-nama h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.nama-mapala{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.nama-mapala h3{
+    color: #006400;
+}
+
+.nama-mapala p{
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
