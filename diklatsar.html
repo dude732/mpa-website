@@ -5,54 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diklatsar | MAPALA UNIMOR</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .content-section{
-      margin: 50px;
+    h3{
+      text-align: center;
     }
 
-    .header{
-      position: fixed;
-      width: 100%;
+    /* Biar dropdown muncul saat hover (opsional) */
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
     }
+
+    /* Warna dropdown */
+    .dropdown-menu {
+        background-color: #212529; /* sama seperti navbar dark */
+        border: none;
+    }
+
+    /* Warna tulisan dropdown */
+    .dropdown-menu .dropdown-item {
+        color: #fff !important;
+    }
+
+    /* Hover dropdown */
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #2e3a31;
+        color: #fff;
+    }
+
   </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">
-      <img src="img/Logo_Berwarna.png" alt="Logo MAPALA UNIMOR">
-      <span><strong>MPA TIGERS</strong></span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <!-- <li class="dropdown">
-            <a href="beranda.html">Beranda</a>
-        </li> -->
-        <li class="dropdown">
-          <a href="#">Profil <span class="arrow">&#9662;</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="sejarah.html">Sejarah</a></li>
-            <li><a href="visi-misi.html">Visi & Misi</a></li>
-            <li><a href="kepengurusan.html">Kepengurusan</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Kegiatan <span class="arrow">&#9662;</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="diklatsar.html">Diklatsar</a></li>
-            <li><a href="dikjut.html">Dikjut</a></li>
-            <li><a href="mpn.html">MPN</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Publikasi <span class="arrow">&#9662;</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="album.html">Album</a></li>
-            <li><a href="majalah.html">Majalah</a></li>
-            <li><a href="artikel.html">Artikel</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html" class="login-button">Beranda</a></li>
-      </ul>
+  <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      
+      <!-- LOGO -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/Logo_Berwarna.png" alt="Logo" width="45" class="me-2">
+        <strong>MPA TIGERS</strong>
+      </a>
+
+      <!-- HAMBURGER BUTTON -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- PROFIL -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown">
+              Profil
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+              <li><a class="dropdown-item" href="visi-misi.html">Visi & Misi</a></li>
+              <li><a class="dropdown-item" href="kepengurusan.html">Kepengurusan</a></li>
+            </ul>
+          </li>
+
+          <!-- KEGIATAN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown">
+              Kegiatan
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="diklatsar.html">Diklatsar</a></li>
+              <li><a class="dropdown-item" href="dikjut.html">Dikjut</a></li>
+              <li><a class="dropdown-item" href="mpn.html">MPN</a></li>
+            </ul>
+          </li>
+
+          <!-- PUBLIKASI -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown">
+              Publikasi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="album.html">Album</a></li>
+              <li><a class="dropdown-item" href="majalah.html">Majalah</a></li>
+              <li><a class="dropdown-item" href="artikel.html">Artikel</a></li>
+            </ul>
+          </li>
+
+          <!-- BERANDA -->
+          <li class="nav-item">
+            <a class="nav-link" href="beranda.html">Beranda</a>
+          </li>
+
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -81,4 +130,5 @@
   </section>
 </body>
 </html>
+
 
