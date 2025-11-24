@@ -33,6 +33,30 @@
         color: #fff;
     }
 
+
+    /* Dropdown terbuka ketika hover */
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown:focus-within .dropdown-menu {
+        display: block;
+    }
+
+    /* Biar dropdown tidak loncat ke bawah ketika muncul */
+    .dropdown-menu {
+        margin-top: 0;
+        background-color: #212529;
+        border: none;
+    }
+
+    /* Warna tulisan */
+    .dropdown-menu .dropdown-item {
+        color: #fff !important;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: #2e3a31;
+        color: #fff;
+    }
+
   </style>
 </head>
 <body>
@@ -152,4 +176,5 @@
 
 </body>
 </html>
+
 
